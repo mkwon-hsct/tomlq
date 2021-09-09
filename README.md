@@ -1,4 +1,4 @@
-# tomlq
+# <img src="image/toml.PNG" alt="TOML image" width="100"/> tomlq
 Tom's Obvious Minimal Language for q
 
 ## Introduction
@@ -15,24 +15,22 @@ tomlq is a TOML file parser for q. You don't need to care notrious `null` any mo
 |long|int|
 |float|double|
 |symbol|string (length <= 30)|
-|timestamp|timesatamp *[1]|
+|timestamp|timesatamp *[<span style="color: red; ">1</span>]|
 |date|date|
 |time|time|
 |list of bool|array of bool|
 |list of long|array of int|
 |list of float|array of double|
 |string|string (length > 30)|
-|list of symbol|array of string *[2]|
-|list of timetamp|array of timestamp *[1]|
+|list of symbol|array of string *[<span style="color: red; ">2</span>]|
+|list of timetamp|array of timestamp *[<span style="color: red; ">1</span>]|
 |list of date|array of date|
 |list of time|array of time|
 |compound list|array of array, array of table, array of mixture|
 |dictionary|table|
 
-*Note:*
-
-*[1]: Millisecond precision<br/>
-*[2]: Length of each symbol must be 63
+*[<span style="color: red; ">1</span>]: Millisecond precision<br/>
+*[<span style="color: red; ">2</span>]: Length of each symbol must be 63
 
 ## Installation
 
