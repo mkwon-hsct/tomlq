@@ -1,0 +1,32 @@
+# Test file
+
+file = "test.toml"
+description="""
+This file is provided to test tomlq for possible TOML types. Adding can be no harm but
+ subtracting is not acceptable.
+"""
+features = {build = "CMake", code = "light-weight", test = true}
+
+[property]
+read-only = true
+tag = ["TOML", "interface", "q"]
+
+[record]
+date = 2021-09-09
+timestamp = 2021-09-09T23:29:20.525+09:00
+time = 23:29:20.525
+temperature-float = 22.3
+temperature-int = 22
+
+[items]
+bools = [true, false]
+ints = [4000, 2000, 1000]
+doubles = [1.0, 2.0, 0.5]
+timestamps = [1978-06-01T04:30:00+09:00, 1998-12-31T05:00:00.888]
+dates = [2009-02-18, 2012-12-31, 2015-03-16]
+times = [04:15:00, 13:00:00, 19:30:30]
+arrays = [[7, 14, 21], [40, 400]]
+tables = [{library = "tomlq", language = ["q", "C"]}, {OS = "LINUX", architecture = "x86_64", kernel = 3.10}]
+miscellaneous = [true, 7777, 3.5, "water", 2021-08-18T04:00:00+09:00, []]
+
+
