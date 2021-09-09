@@ -1,11 +1,10 @@
-# <img src="image/toml.PNG" alt="TOML image" width="100"/> tomlq
-Tom's Obvious Minimal Language for q
+# <img src="image/toml.PNG" alt="TOML image" width="400"/>
 
 ## Introduction
 
-Programming language q has a native JSON parser but JSON is not the only format for a configuration file. XML is tab intensive and YAML requires careful space insertion. However, TOML is friendly both for human and program.
+Programming language q has a native JSON parser but JSON is not the only format for a configuration file. However, XML is tab intensive and YAML requires careful space insertion. Here, Tom's Obvious Minimal Language (TOML) is friendly for both human and program.
 
-tomlq is a TOML file parser for q. You don't need to care notrious `null` any more at parsing. You don't need headach of attributes. Just write fair-looking configuration file and load it.
+tomlq is a TOML file parser for q. You don't need to care notrious `null` value any more. You don't need the headach of attributes. Just write fair-looking configuration file and parse it.
 
 ## Type Mapping
 
